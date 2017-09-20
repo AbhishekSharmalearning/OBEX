@@ -115,6 +115,7 @@ public class OfferBundleFragment extends AppCompatFragment {
 			public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l)
 			{
 				//Here right the code for spinner click
+				//recheck
 			}
 
 			@Override

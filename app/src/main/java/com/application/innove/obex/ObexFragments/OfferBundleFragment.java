@@ -112,13 +112,14 @@ public class OfferBundleFragment extends AppCompatFragment {
 
 		Spinnerfirst.setOnItemSelectedListener ( new AdapterView.OnItemSelectedListener () {
 			@Override
-			public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-
-
+			public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l)
+			{
+				//Here right the code for spinner click
 			}
 
 			@Override
-			public void onNothingSelected(AdapterView<?> adapterView) {
+			public void onNothingSelected(AdapterView<?> adapterView)
+			{
 
 			}
 		} );

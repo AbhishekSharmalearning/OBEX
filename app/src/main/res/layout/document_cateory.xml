@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@drawable/recyclerview_border"
+    android:layout_marginTop="8dp">
+
+
+
+    <com.application.innove.obex.Utilityclass.TypefacedTextView
+        android:id="@+id/tv_docs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorPrimary"
+        tools:text="Genre" />
+
+    <ImageView
+        android:id="@+id/im_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_arrow_down" />
+
+</FrameLayout>
+

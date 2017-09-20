@@ -1,0 +1,73 @@
+[{
+		"CheckListID": 1,
+		"DocID": 2,
+		"CheckListName": "Address Proof",
+		"Doctype": "Adhar",
+		"DocName": "Adhar Card-Front"
+	}, {
+		"CheckListID": 1,
+		"DocID": 3,
+		"CheckListName": "Address Proof",
+		"Doctype": "Electricity Bill",
+		"DocName": "Electricity Bill"
+	}, {
+		"CheckListID": 1,
+		"DocID": 4,
+		"CheckListName": "Address Proof",
+		"Doctype": "Passport",
+		"DocName": "Passport"
+	}, {
+		"CheckListID": 1,
+		"DocID": 5,
+		"CheckListName": "Address Proof",
+		"Doctype": "Ration",
+		"DocName": "Ration Card"
+	}, {
+		"CheckListID": 2,
+		"DocID": 1,
+		"CheckListName": "Age Proof",
+		"Doctype": "PAN",
+		"DocName": "PAN Card"
+	}, {
+		"CheckListID": 2,
+		"DocID": 2,
+		"CheckListName": "Age Proof",
+		"Doctype": "Adhar",
+		"DocName": "Adhar Card-Front"
+	}, {
+		"CheckListID": 2,
+		"DocID": 4,
+		"CheckListName": "Age Proof",
+		"Doctype": "Passport",
+		"DocName": "Passport"
+	}, {
+		"CheckListID": 3,
+		"DocID": 1,
+		"CheckListName": "ID Proof",
+		"Doctype": "PAN",
+		"DocName": "PAN Card"
+	}, {
+		"CheckListID": 3,
+		"DocID": 2,
+		"CheckListName": "ID Proof",
+		"Doctype": "Adhar",
+		"DocName": "Adhar Card-Front"
+	}, {
+		"CheckListID": 3,
+		"DocID": 4,
+		"CheckListName": "ID Proof",
+		"Doctype": "Passport",
+		"DocName": "Passport"
+	}, {
+		"CheckListID": 4,
+		"DocID": 23,
+		"CheckListName": "Others",
+		"Doctype": "Cheque",
+		"DocName": "Cheque"
+	}, {
+		"CheckListID": 3,
+		"DocID": 22,
+		"CheckListName": "ID Proof",
+		"Doctype": "Voter Card",
+		"DocName": "Voter Card"
+	}]

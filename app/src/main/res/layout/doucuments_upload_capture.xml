@@ -1,0 +1,406 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ObexActivities.Document_capture_and_upload">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <LinearLayout
+        android:id="@+id/parentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:background="#EFF0F2"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <ImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="9"
+                    android:src="@drawable/user" />
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_weight="2.5"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="1">-->
+
+                <!--<com.application.innove.obex.Utilityclass.TypefacedTextView-->
+                <!--android:id="@+id/names"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight=".5"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="#87888A"-->
+                <!--android:textSize="13dp"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<com.application.innove.obex.Utilityclass.TypefacedTextView-->
+                <!--android:id="@+id/sirnames"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight=".5"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="#87888A"-->
+                <!--android:textSize="13dp"-->
+                <!--android:textStyle="bold" />-->
+                <!--</LinearLayout>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <com.application.innove.obex.Utilityclass.TypefacedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="@string/Personal_details"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <com.application.innove.obex.Utilityclass.TypefacedTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".35"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text="First Name"
+                        android:textSize="11dp" />
+
+                    <com.application.innove.obex.Utilityclass.TypefacedTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text=":"
+                        android:textSize="15dp" />
+
+                    <com.application.innove.obex.Utilityclass.TypefacedTextView
+                        android:id="@+id/name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".55"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <com.application.innove.obex.Utilityclass.TypefacedTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".35"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text="Last name"
+                        android:textSize="11dp" />
+
+                    <com.application.innove.obex.Utilityclass.TypefacedTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text=":"
+                        android:textSize="15dp" />
+
+                    <com.application.innove.obex.Utilityclass.TypefacedTextView
+                        android:id="@+id/sirname"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".55"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <com.application.innove.obex.Utilityclass.TypefacedTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".35"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text="DOB"
+                        android:textSize="11dp" />
+
+                    <com.application.innove.obex.Utilityclass.TypefacedTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text=":"
+                        android:textSize="15dp" />
+
+                    <com.application.innove.obex.Utilityclass.TypefacedTextView
+                        android:id="@+id/DOB"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".55"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <com.application.innove.obex.Utilityclass.TypefacedTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".35"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text="Mobile No"
+                        android:textSize="11dp" />
+
+                    <com.application.innove.obex.Utilityclass.TypefacedTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text=":"
+                        android:textSize="15dp" />
+
+                    <com.application.innove.obex.Utilityclass.TypefacedTextView
+                        android:id="@+id/mobile"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".55"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <com.application.innove.obex.Utilityclass.TypefacedTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".35"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text="Innove ID"
+                        android:textSize="11dp" />
+
+                    <com.application.innove.obex.Utilityclass.TypefacedTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text=":"
+                        android:textSize="15dp" />
+
+                    <com.application.innove.obex.Utilityclass.TypefacedTextView
+                        android:id="@+id/innov_id"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".55"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_weight="1.5"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="1">-->
+
+                <!--<com.application.innove.obex.Utilityclass.TypefacedTextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight=".4"-->
+                <!--android:gravity="center|left"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:text="Ref Code"-->
+                <!--android:textSize="14dp" />-->
+
+                <!--<com.application.innove.obex.Utilityclass.TypefacedTextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight=".1"-->
+                <!--android:gravity="center|left"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:text=":"-->
+                <!--android:textSize="15dp" />-->
+
+                <!--<com.application.innove.obex.Utilityclass.TypefacedTextView-->
+                <!--android:id="@+id/refcode"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight=".5"-->
+                <!--android:gravity="center|left"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:text="SBI1045"-->
+                <!--android:textSize="12dp" />-->
+                <!--</LinearLayout>-->
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DE3B4E"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@android:color/white"
+                app:tabIndicatorHeight="2dp"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@android:color/white"
+                app:tabTextColor="#e5e5e5" />
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6.5">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/progressbarhorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9"
+            android:background="#081C37"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".6"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight=".85"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:minHeight="50dp"
+                    android:minWidth="200dp"
+                    android:progress="1" />
+
+                <com.application.innove.obex.Utilityclass.TypefacedTextView
+                    android:id="@+id/percentage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight=".15"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="8dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <com.application.innove.obex.Utilityclass.TypefacedTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight=".4"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:text="@string/Uploadstatus"
+                android:textColor="#F3F4F8"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
